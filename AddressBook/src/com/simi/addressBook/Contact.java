@@ -1,4 +1,11 @@
-package com.simi.addressBook;
+package src.com.simi.addressBook;
+
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 public class Contact implements Serializable {
     private String Name;
