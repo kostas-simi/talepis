@@ -1,7 +1,7 @@
 package src.com.simi.addressBook;
 
 
-import jdk.nashorn.api.tree.WhileLoopTree;
+
 
 import java.io.*;
 import java.util.ArrayList;
@@ -10,12 +10,16 @@ import java.util.List;
 
 public class Main {
     static List<Contact> contacts = new ArrayList<>();
+    public static boolean condition = true;
+
 
     public static void main(String[] args) {
         contacts = LoadContacts("addressBook.csv");
+        System.out.println("Welcome! ");
+        while(condition) {
+            Options.ChooseOption();
 
-        Options.ChooseOption();
-
+        }
         SaveContacts(contacts,"addressBook.csv");
     }
 
