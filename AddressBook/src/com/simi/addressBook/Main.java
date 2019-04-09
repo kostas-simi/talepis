@@ -14,13 +14,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-        contacts = LoadContacts("addressBook.csv");
+        contacts = LoadContacts("addressBook.dat");
         System.out.println("Welcome! ");
         while(condition) {
             Options.ChooseOption();
 
         }
-        SaveContacts(contacts,"addressBook.csv");
+        SaveContacts(contacts, "addressBook.dat");
     }
 
     static List<Contact> LoadContacts(String filename) {
